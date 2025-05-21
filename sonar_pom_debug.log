@@ -1,0 +1,246 @@
+[INFO] Scanning for projects...
+[WARNING] The artifact org.codehaus.mojo:sonar-maven-plugin:jar:4.0.0.4121 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:jar:4.0.0.4121: SonarQube plugin was moved to SonarSource organisation
+[INFO] 
+[INFO] ------------------------< com.mateoossa:banco >-------------------------
+[INFO] Building banco 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ banco ---
+[INFO] Deleting C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (checkstyle) @ banco ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- jacoco:0.8.13:prepare-agent (default) @ banco ---
+[INFO] argLine set to "-javaagent:C:\\Users\\mateo\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.13\\org.jacoco.agent-0.8.13-runtime.jar=destfile=C:\\Users\\mateo\\Desktop\\all\\Estudios\\testing automatizado\\banco\\target\\jacoco.exec"
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ banco ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ banco ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 6 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ banco ---
+[INFO] skip non existing resourceDirectory C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ banco ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ banco ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mateoossa.banco.BancoApplicationTests
+21:48:29.246 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mateoossa.banco.BancoApplicationTests]: BancoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:48:29.463 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mateoossa.banco.BancoApplication for test class com.mateoossa.banco.BancoApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-05-20T21:48:30.524-04:00  INFO 4964 --- [banco] [           main] c.mateoossa.banco.BancoApplicationTests  : Starting BancoApplicationTests using Java 21.0.7 with PID 4964 (started by mateo in C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco)
+2025-05-20T21:48:30.526-04:00  INFO 4964 --- [banco] [           main] c.mateoossa.banco.BancoApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-05-20T21:48:31.409-04:00  INFO 4964 --- [banco] [           main] c.mateoossa.banco.BancoApplicationTests  : Started BancoApplicationTests in 1.57 seconds (process running for 4.591)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\mateo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.945 s -- in com.mateoossa.banco.BancoApplicationTests
+[INFO] Running com.mateoossa.banco.models.BancoTest
+[INFO] Running com.mateoossa.banco.models.BancoTest$AgregarCuentaTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s -- in com.mateoossa.banco.models.BancoTest$AgregarCuentaTests
+[INFO] Running com.mateoossa.banco.models.BancoTest$ConstructorTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in com.mateoossa.banco.models.BancoTest$ConstructorTests
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s -- in com.mateoossa.banco.models.BancoTest
+[INFO] Running com.mateoossa.banco.services.ServicioBancarioTest
+[INFO] Running com.mateoossa.banco.services.ServicioBancarioTest$TransferirTests
+Error en la transferencia: El saldo es insuficiente
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s -- in com.mateoossa.banco.services.ServicioBancarioTest$TransferirTests
+[INFO] Running com.mateoossa.banco.services.ServicioBancarioTest$ConsultarEstadoTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in com.mateoossa.banco.services.ServicioBancarioTest$ConsultarEstadoTests
+[INFO] Running com.mateoossa.banco.services.ServicioBancarioTest$RetirarTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in com.mateoossa.banco.services.ServicioBancarioTest$RetirarTests
+[INFO] Running com.mateoossa.banco.services.ServicioBancarioTest$DepositarTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s -- in com.mateoossa.banco.services.ServicioBancarioTest$DepositarTests
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.100 s -- in com.mateoossa.banco.services.ServicioBancarioTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.13:report (report) @ banco ---
+[INFO] Loading execution data file C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\jacoco.exec
+[INFO] Analyzed bundle 'banco' with 6 classes
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ banco ---
+[INFO] Building jar: C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\banco-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.4.5:repackage (repackage) @ banco ---
+[INFO] Replacing main artifact C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\banco-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\banco-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- spotbugs:4.9.3.0:spotbugs (spotbugs-analysis) @ banco ---
+[INFO] Fork Value is true
+[INFO] Done SpotBugs Analysis....
+[WARNING] Unable to find a URL to the parent project. The parent menu will NOT be added.
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[INFO] 
+[INFO] --- pmd:3.26.0:pmd (pmd-check) @ banco ---
+[INFO] PMD version: 7.7.0
+[WARNING] Unable to find a URL to the parent project. The parent menu will NOT be added.
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[INFO] 
+[INFO] --- pmd:3.26.0:cpd (pmd-check) @ banco ---
+[WARNING] Unable to find a URL to the parent project. The parent menu will NOT be added.
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[INFO] 
+[INFO] ------------------------< com.mateoossa:banco >-------------------------
+[INFO] Building banco 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- sonar:4.0.0.4121:sonar (default-cli) @ banco ---
+[WARNING] 21:48:46.284 Using an unspecified version instead of an explicit plugin version may introduce breaking analysis changes at an unwanted time. It is highly recommended to use an explicit version, e.g. 'org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121'.
+[INFO] 21:48:46.297 Java 21.0.7 Oracle Corporation (64-bit)
+[INFO] 21:48:46.297 Windows 11 10.0 (amd64)
+[INFO] 21:48:46.508 User cache: C:\Users\mateo\.sonar\cache
+[INFO] 21:48:46.581 Communicating with SonarQube Server 9.9.8.100196
+[INFO] 21:48:46.598 Default locale: "en_US", source code encoding: "UTF-8"
+[INFO] 21:48:47.369 Load global settings
+[INFO] 21:48:47.641 Load global settings (done) | time=272ms
+[INFO] 21:48:47.642 Server id: 147B411E-AZbr-S00AA5G2arz39Gv
+[INFO] 21:48:47.646 User cache: C:\Users\mateo\.sonar\cache
+[INFO] 21:48:47.650 Load/download plugins
+[INFO] 21:48:47.650 Load plugins index
+[INFO] 21:48:47.699 Load plugins index (done) | time=49ms
+[INFO] 21:48:47.768 Load/download plugins (done) | time=118ms
+[INFO] 21:48:48.396 Process project properties
+[INFO] 21:48:48.406 Process project properties (done) | time=10ms
+[INFO] 21:48:48.409 Execute project builders
+[INFO] 21:48:48.416 Execute project builders (done) | time=7ms
+[INFO] 21:48:48.424 Project key: com.mateoossa.banco
+[INFO] 21:48:48.424 Base dir: C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco
+[INFO] 21:48:48.425 Working dir: C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\sonar
+[INFO] 21:48:48.433 Load project settings for component key: 'com.mateoossa.banco'
+[INFO] 21:48:48.455 Load project settings for component key: 'com.mateoossa.banco' (done) | time=22ms
+[WARNING] 21:48:48.656 SCM provider autodetection failed. Please use "sonar.scm.provider" to define SCM of your project, or disable the SCM Sensor in the project settings.
+[INFO] 21:48:48.667 Load quality profiles
+[INFO] 21:48:48.785 Load quality profiles (done) | time=118ms
+[INFO] 21:48:48.798 Load active rules
+[INFO] 21:48:50.597 Load active rules (done) | time=1799ms
+[INFO] 21:48:50.601 Load analysis cache
+[INFO] 21:48:50.620 Load analysis cache (297 bytes) | time=19ms
+[INFO] 21:48:50.692 Load project repositories
+[INFO] 21:48:50.710 Load project repositories (done) | time=18ms
+[INFO] 21:48:50.742 Indexing files...
+[INFO] 21:48:50.742 Project configuration:
+[INFO] 21:48:50.787 10 files indexed
+[INFO] 21:48:50.943 Quality profile for java: Sonar way
+[INFO] 21:48:50.943 Quality profile for xml: Sonar way
+[INFO] 21:48:50.943 ------------- Run sensors on module banco
+[INFO] 21:48:51.055 Load metrics repository
+[INFO] 21:48:51.073 Load metrics repository (done) | time=18ms
+[INFO] 21:48:52.984 Sensor JavaSensor [java]
+[INFO] 21:48:52.990 Configured Java source version (sonar.java.source): 21
+[INFO] 21:48:52.995 JavaClasspath initialization
+[INFO] 21:48:53.004 JavaClasspath initialization (done) | time=9ms
+[INFO] 21:48:53.005 JavaTestClasspath initialization
+[INFO] 21:48:53.009 JavaTestClasspath initialization (done) | time=4ms
+[INFO] 21:48:53.019 Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+[INFO] 21:48:53.023 Using ECJ batch to parse 6 Main java source files with batch size 428 KB.
+[INFO] 21:48:53.354 Starting batch processing.
+[INFO] 21:48:53.945 The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+[INFO] 21:48:54.732 100% analyzed
+[INFO] 21:48:54.732 Batch processing: Done.
+[INFO] 21:48:54.733 Did not optimize analysis for any files, performed a full analysis for all 6 files.
+[INFO] 21:48:54.734 Using ECJ batch to parse 3 Test java source files with batch size 428 KB.
+[INFO] 21:48:54.746 Starting batch processing.
+[INFO] 21:48:54.976 100% analyzed
+[INFO] 21:48:54.977 Batch processing: Done.
+[INFO] 21:48:54.978 Did not optimize analysis for any files, performed a full analysis for all 3 files.
+[INFO] 21:48:54.979 No "Generated" source files to scan.
+[INFO] 21:48:54.979 Sensor JavaSensor [java] (done) | time=1995ms
+[INFO] 21:48:54.979 Sensor JaCoCo XML Report Importer [jacoco]
+[INFO] 21:48:54.984 Importing 1 report(s). Turn your logs in debug mode in order to see the exhaustive list.
+[INFO] 21:48:55.061 Sensor JaCoCo XML Report Importer [jacoco] (done) | time=82ms
+[INFO] 21:48:55.062 Sensor CSS Rules [javascript]
+[INFO] 21:48:55.062 No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+[INFO] 21:48:55.062 Sensor CSS Rules [javascript] (done) | time=0ms
+[INFO] 21:48:55.062 Sensor C# Project Type Information [csharp]
+[INFO] 21:48:55.063 Sensor C# Project Type Information [csharp] (done) | time=1ms
+[INFO] 21:48:55.064 Sensor C# Analysis Log [csharp]
+[INFO] 21:48:55.086 Sensor C# Analysis Log [csharp] (done) | time=22ms
+[INFO] 21:48:55.086 Sensor C# Properties [csharp]
+[INFO] 21:48:55.086 Sensor C# Properties [csharp] (done) | time=0ms
+[INFO] 21:48:55.086 Sensor Import of Checkstyle issues [java]
+[INFO] 21:48:55.092 Importing C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\checkstyle-result.xml
+[WARNING] 21:48:55.264 No input file found for 'C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\src\main\resources\application.properties'. No checkstyle issues will be imported on this file.
+[INFO] 21:48:55.265 Sensor Import of Checkstyle issues [java] (done) | time=179ms
+[INFO] 21:48:55.266 Sensor Import of PMD issues [java]
+[INFO] 21:48:55.267 Importing C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\pmd.xml
+[INFO] 21:48:55.272 Sensor Import of PMD issues [java] (done) | time=6ms
+[INFO] 21:48:55.272 Sensor Import of SpotBugs issues [java]
+[INFO] 21:48:55.274 Importing C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\spotbugsXml.xml
+[INFO] 21:48:55.289 Sensor Import of SpotBugs issues [java] (done) | time=17ms
+[INFO] 21:48:55.289 Sensor SurefireSensor [java]
+[INFO] 21:48:55.291 parsing [C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\surefire-reports]
+[INFO] 21:48:55.509 Sensor SurefireSensor [java] (done) | time=220ms
+[INFO] 21:48:55.509 Sensor HTML [web]
+[INFO] 21:48:55.513 Sensor HTML [web] (done) | time=4ms
+[INFO] 21:48:55.513 Sensor XML Sensor [xml]
+[INFO] 21:48:55.518 1 source file to be analyzed
+[INFO] 21:48:55.714 1/1 source file has been analyzed
+[INFO] 21:48:55.715 Sensor XML Sensor [xml] (done) | time=202ms
+[INFO] 21:48:55.715 Sensor TextAndSecretsSensor [text]
+[INFO] 21:48:55.739 10 source files to be analyzed
+[INFO] 21:48:55.780 10/10 source files have been analyzed
+[INFO] 21:48:55.780 Sensor TextAndSecretsSensor [text] (done) | time=65ms
+[INFO] 21:48:55.780 Sensor VB.NET Project Type Information [vbnet]
+[INFO] 21:48:55.781 Sensor VB.NET Project Type Information [vbnet] (done) | time=1ms
+[INFO] 21:48:55.781 Sensor VB.NET Analysis Log [vbnet]
+[INFO] 21:48:55.801 Sensor VB.NET Analysis Log [vbnet] (done) | time=20ms
+[INFO] 21:48:55.801 Sensor VB.NET Properties [vbnet]
+[INFO] 21:48:55.801 Sensor VB.NET Properties [vbnet] (done) | time=0ms
+[INFO] 21:48:55.801 Sensor IaC Docker Sensor [iac]
+[INFO] 21:48:55.805 0 source files to be analyzed
+[INFO] 21:48:55.872 0/0 source files have been analyzed
+[INFO] 21:48:55.872 Sensor IaC Docker Sensor [iac] (done) | time=71ms
+[INFO] 21:48:55.876 ------------- Run sensors on project
+[INFO] 21:48:55.946 Sensor Analysis Warnings import [csharp]
+[INFO] 21:48:55.947 Sensor Analysis Warnings import [csharp] (done) | time=1ms
+[INFO] 21:48:55.947 Sensor Zero Coverage Sensor
+[INFO] 21:48:55.948 Sensor Zero Coverage Sensor (done) | time=1ms
+[INFO] 21:48:55.948 Sensor Java CPD Block Indexer
+[INFO] 21:48:55.975 Sensor Java CPD Block Indexer (done) | time=27ms
+[INFO] 21:48:55.977 SCM Publisher No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] 21:48:55.983 CPD Executor 3 files had no CPD blocks
+[INFO] 21:48:55.983 CPD Executor Calculating CPD for 3 files
+[INFO] 21:48:55.994 CPD Executor CPD calculation finished (done) | time=11ms
+[INFO] 21:48:56.097 Analysis report generated in 91ms, dir size=191.2 kB
+[INFO] 21:48:56.189 Analysis report compressed in 91ms, zip size=42.6 kB
+[INFO] 21:48:56.189 Analysis report generated in C:\Users\mateo\Desktop\all\Estudios\testing automatizado\banco\target\sonar\scanner-report
+[INFO] 21:48:56.228 Analysis report uploaded in 39ms
+[INFO] 21:48:56.861 ANALYSIS SUCCESSFUL, you can find the results at: http://127.0.0.1:9000/dashboard?id=com.mateoossa.banco
+[INFO] 21:48:56.861 Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] 21:48:56.861 More about the report processing at http://127.0.0.1:9000/api/ce/task?id=AZbwh4gOAA5G2arz4HC8
+[INFO] 21:48:56.869 Analysis total time: 9.000 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  42.010 s
+[INFO] Finished at: 2025-05-20T21:48:56-04:00
+[INFO] ------------------------------------------------------------------------
