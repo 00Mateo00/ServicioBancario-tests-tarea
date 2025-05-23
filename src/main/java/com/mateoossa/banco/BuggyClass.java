@@ -11,8 +11,7 @@ public class BuggyClass {
         items.add("item1");
     }
 
-    // This method will trigger SpotBugs EI_EXPOSE_REP
     public List<String> getItems() {
-        return items; // Directly returning the internal mutable list
+        return items;
     }
 }
