@@ -124,7 +124,7 @@ class ServicioBancarioTest {
     }
 
     @Test
-    @DisplayName("Debería lanzar NullPointerException al intentar retirar de una cuenta nula (comportamiento actual)")
+    @DisplayName("Debería lanzar NullPointerException al intentar retirar de una cuenta nula")
     void deberiaLanzarNullPointerExceptionAlRetirarDeCuentaNula() {
       double montoRetiro = 500.0;
       Cuenta cuentaNula = null;
