@@ -4,11 +4,13 @@
   import java.util.List;
   import java.util.Objects;
 
+  import lombok.EqualsAndHashCode;
   import lombok.Getter;
   import lombok.Setter;
 
   @Getter
   @Setter
+  @EqualsAndHashCode
   public class Banco {
 
     private String nombre;

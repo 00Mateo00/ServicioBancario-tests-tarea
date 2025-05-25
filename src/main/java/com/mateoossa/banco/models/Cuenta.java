@@ -14,7 +14,7 @@ public class Cuenta {
   public Cuenta(String nombre, double saldo, Banco banco) {
     this.nombre = nombre;
     this.saldo = saldo;
-    this.banco = makeBanco(banco);
+    this.banco = banco;
   }
 
 
@@ -26,17 +26,6 @@ public class Cuenta {
     this.saldo -= monto;
   }
 
-  private Banco makeBanco(Banco banco) {
-    if (banco != null) {
-      return Banco.crearCopia(banco);
-    }
-    return null;
-  }
-
-
-  public void setBanco(Banco banco) {
-    this.banco = makeBanco(banco);
-  }
 
   public Banco getBanco() {
     if (this.banco == null) {

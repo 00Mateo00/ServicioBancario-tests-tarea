@@ -39,12 +39,8 @@ public class ServicioBancario {
     if (monto <= 0) {
       throw new IllegalArgumentException("El monto a transferir debe ser positivo.");
     }
-    try {
-      this.retirar(cuentaOriginen, monto);
-      this.depositar(cuentaDestino, monto);
-    } catch (Exception e) {
-      System.err.println("Error en la transferencia: " + e.getMessage());
-    }
+    this.retirar(cuentaOriginen, monto);
+    this.depositar(cuentaDestino, monto);
   }
 
 }
